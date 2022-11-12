@@ -1,129 +1,65 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import microphone from '$lib/images/speaker_icon.svg'
+
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+	<div class="title-box">
+		<a href="https://github.com/p5quared/dementia-alzheimers-site">
 			<img src={github} alt="GitHub" />
+			<h1> Site Name</h1>
 		</a>
 	</div>
+	<div class="accessibility-features">
+		<div class="reader">
+			<h2>Reader</h2>
+			<img id="reader-icon" src={microphone} alt="Microphone"/>
+		</div>
+		<div class="text-resize">a a A</div>
+	</div>
+
+
 </header>
 
 <style>
 	header {
+		padding-inline: 15em;
 		display: flex;
 		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
 		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
+		background-color: #3C6E71;
+		color: var(--color-offwhite);
+		height: 7em;
 	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
-	nav {
+	a {
 		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		gap: 1em;
+		height: 5em;
+		color: var(--color-offwhite);
 		text-decoration: none;
-		transition: color 0.2s linear;
+	}
+	h1 {
+		align-self: center;
+		font-size: 40px;
+		text-wrap: none;
+	}
+	.accessibility-features {
+		display: flex;
+		align-items: center;
+		gap: 2em;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	.reader {
+		display: flex;
+		gap: 1em;
+		background-color: #284B63;
+		padding: 1em;
+	}
+	#reader-icon {
+		height: 2em;
 	}
 
-	a:hover {
-		color: var(--color-theme-1);
-	}
 </style>
