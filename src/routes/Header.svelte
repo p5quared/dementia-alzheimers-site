@@ -11,15 +11,18 @@
 			<h1> Site Name</h1>
 		</a>
 	</div>
+
 	<div class="accessibility-features">
 		<div class="reader">
 			<h2>Reader</h2>
 			<img id="reader-icon" src={microphone} alt="Microphone"/>
 		</div>
-		<div class="text-resize">a a A</div>
+		<div class="text-resize">
+			<div id="small">a</div>
+			<div id="medium">A</div>
+			<div id="large">A</div>
+		</div>
 	</div>
-
-
 </header>
 
 <style>
@@ -60,6 +63,20 @@
 	}
 	#reader-icon {
 		height: 2em;
+	}
+	.text-resize {
+		display: flex;
+		gap: 1.5em;
+		align-items: baseline;
+	}
+	#small {
+		font-size: 24px;
+	}
+	#medium {
+		font-size: 32px;
+	}
+	#large {
+		font-size: 42px;
 	}
 
 </style>
