@@ -14,8 +14,8 @@
 	<Navigation />
 	<a id="main-voice-link" href="/voice">Click Me to Ask a Command</a>
 	<footer>
-		<a href="/blog">Blog</a>
-		<a href="/sitemap">Sitemap</a>
+		<a href="/about">Blog</a>
+		<a href="/about">Sitemap</a>
 		<a href="/about">About Us</a>
 	</footer>
 </section>

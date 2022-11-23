@@ -5,14 +5,14 @@
 
 <nav>
     <ul>
-        <li aria-current={$page.url.pathname === '/help' ? 'help' : undefined}>
-            <a href="/help">Help</a>
+        <li aria-current={$page.url.pathname === '/about' ? 'about' : undefined}>
+            <a href="/about">Help</a>
         </li>
-        <li aria-current={$page.url.pathname === '/phone' ? 'phone' : undefined}>
-            <a href="/phone">Phone</a>
+        <li aria-current={$page.url.pathname === '/about' ? 'about' : undefined}>
+            <a href="/about">Phone</a>
         </li>
-        <li aria-current={$page.url.pathname === '/games' ? 'games' : undefined}>
-            <a href="/games">Games</a>
+        <li aria-current={$page.url.pathname === '/about' ? 'about' : undefined}>
+            <a href="/about">Games</a>
         </li>
     </ul>
 </nav>
