@@ -37,12 +37,13 @@
     .wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 10px;
         background-color: var(--color-offwhite);
     }
     .video-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         height: 100vh;
     }
     #chess {
@@ -50,7 +51,7 @@
     }
     video {
         outline: solid;
-        height: 600px;
+        width: 625px;
     }
     .buttons{
         display: flex;
