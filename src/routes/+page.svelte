@@ -1,7 +1,7 @@
 <script>
 	import github from '$lib/images/github.svg';
 	import microphone from '$lib/images/speaker_icon.svg'
-	import "./styles.css"
+	import "./reset.css"
 	import { page } from '$app/stores';
 
 	let size = "54px";
@@ -43,7 +43,7 @@
 				<a href="/schedule">Schedule</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'about' : undefined}>
-				<a href="/about">Phone</a>
+				<a href="/phone">Phone</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/games' ? 'games' : undefined}>
 				<a href="/games">Games</a>
