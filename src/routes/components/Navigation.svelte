@@ -5,7 +5,7 @@
 
 <nav>
     <ul>
-        <li aria-current={$page.url.pathname === '/about' ? 'about' : undefined}>
+        <li aria-current={$page.url.pathname === '/' ? 'home' : undefined}>
             <a href="/about">Help</a>
         </li>
         <li aria-current={$page.url.pathname === '/about' ? 'about' : undefined}>
