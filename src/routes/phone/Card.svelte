@@ -2,7 +2,7 @@
     //import { mapActions } from 'vuex';
     import store from "./store/game.js";
     import { createEventDispatcher } from "svelte";
-    import back_img from "$lib/images/back.png"
+    import back_img from "$lib/game_content/back.png"
     const dispatch = createEventDispatcher();
     export let key;
     export let option = {

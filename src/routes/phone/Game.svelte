@@ -4,7 +4,7 @@
     import Chessboard from "./Chessboard.svelte";
     import PlayStatus from "./PlayStatus.svelte";
     import { STATUS } from "./store/status_enums";
-    import { shuffle } from "$lib/shuffle.js";
+    import { shuffle } from "$lib/game_content/shuffle.js";
     export let gameData = [];
     let show = "text";
     let settings = {

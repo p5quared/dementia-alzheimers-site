@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import { copyObject } from "$lib/utils.js";
+import { copyObject } from "$lib/game_content/utils.js";
 
 let state = {};
 let timerId;

@@ -2,7 +2,7 @@
     import store from "./store/game.js";
     import Card from "./Card.svelte";
     import { STATUS } from "./store/status_enums.js";
-    import { copyObject } from "$lib/utils.js";
+    import { copyObject } from "$lib/game_content/utils.js";
     export let cards = [];
     export let lastCard = null;
     function onFlipped(e) {
