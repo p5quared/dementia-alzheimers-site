@@ -1,8 +1,6 @@
 <style>
     .logo {
-        width: 160px;
-        height: 100px;
-        line-height: 90px;
+        line-height: 25px;
         padding: 5px;
         border-radius: 5px;
         background-color: #5979ac;
@@ -34,7 +32,7 @@
 </style>
 
 <h1 class="logo">
-    <a href="https://github.com/freshteapot/svelte-memory-game" target="_blank">
-        Memory
+    <a href="https://github.com/freshteapot/svelte-memory-game" >
+        Memory<br>Game
     </a>
 </h1>

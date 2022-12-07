@@ -1,5 +1,5 @@
 <script>
-    import store from "./store/game.js";
+    //import store from "./store/game.js";
     //import { mapGetters } from 'vuex';
     /*
   export default {
@@ -15,8 +15,6 @@
 
 <style>
     .board {
-        width: 120px;
-        height: 100px;
         padding: 10px;
         background-color: #bbada0;
         border-radius: 5px;
