@@ -43,10 +43,10 @@
 				<a href="/schedule">Schedule</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'about' : undefined}>
-				<a href="/phone">Phone</a>
+				<a href="/games">Phone</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/games' ? 'games' : undefined}>
-				<a href="/games">Games</a>
+				<a href="/phone">Games</a>
 			</li>
 		</ul>
 	</nav>
