@@ -1,5 +1,5 @@
 <script>
-    import * as aList from "./data/alist.json";
+    import * as aList from "./data/alist2.json";
     import Game from "./game.svelte";
     const data = aList.data.map(item => {
         item.img = `images/${item.img}`
