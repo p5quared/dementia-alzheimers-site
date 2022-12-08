@@ -1,5 +1,6 @@
 <script>
 	import github from '$lib/images/github.svg';
+	import careAD from '$lib/images/careAD.png'
 	import microphone from '$lib/images/speaker_icon.svg'
 	import "./reset.css"
 	import { page } from '$app/stores';
@@ -16,8 +17,8 @@
 	<header>
 		<div class="title-box">
 			<a href="https://github.com/p5quared/dementia-alzheimers-site">
-				<img src={github} alt="GitHub" />
-				<h1> Site Name</h1>
+				<img src={careAD} alt="GitHub" />
+				<h1>Care AD</h1>
 			</a>
 		</div>
 

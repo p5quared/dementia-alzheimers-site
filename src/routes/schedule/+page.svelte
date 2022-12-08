@@ -1,15 +1,18 @@
 <script>
-    import map from "$lib/images/google_maps.webp";
+    import { GoogleMap } from "@beyonk/svelte-googlemaps";
 </script>
 
 
 <div class="wrapper">
     <h1>Here is your next appointment:</h1>
     <div id="body">
-        <div id="directions">
-            <img src={map} alt="google maps">
-            <p>Click for Directions</p>
+        <div class="map-wrapper">
+            <GoogleMap apiKey="AIzaSyASFy6OyBywv3yG2Z2Whq2KjsgOc07Qirw" zoom={14} center={{lat: 40.765126, lng: -73.964901}} />
         </div>
+<!--        <div id="directions">-->
+<!--            <img src={map} alt="google maps">-->
+<!--            <p>Click for Directions</p>-->
+<!--        </div>-->
         <div id="information">
             <ul>
                 <li>
@@ -62,8 +65,9 @@
     ul {
         padding-bottom: 0.75em;
     }
-    img {
+    .map-wrapper {
         width: 800px;
+        height: 800px;
     }
     h1 {
         font-size: 54px;
