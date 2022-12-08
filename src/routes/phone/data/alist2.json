@@ -1,0 +1,48 @@
+{
+  "info": {
+    "title": "Gathered Random Images",
+    "type": "v5"
+  },
+  "data": [
+    {
+      "name": "BMCC",
+      "img": "bmcc.png",
+      "url": "https://www.default.com"
+    },
+    {
+      "name": "Google Chrome",
+      "img": "chrome.png",
+      "url": "https://www.default.com"
+    },
+    {
+      "name": "Diamond",
+      "img": "diamond.png",
+      "url": "https://www.default.com"
+    },
+    {
+      "name": "T-Rex",
+      "img": "dinosaur.jpeg",
+      "url": "https://www.default.com"
+    },
+    {
+      "name": "Olympics",
+      "img": "olympics.png",
+      "url": "https://www.default.com"
+    },
+    {
+      "name": "Pac-Man",
+      "img": "pac-man.png",
+      "url": "https://www.default.com"
+    },
+    {
+      "name": "Question-Mark",
+      "img": "question.png",
+      "url": "https://www.default.com"
+    },
+    {
+      "name": "Recycle",
+      "img": "recycle.png",
+      "url": "https://www.default.com"
+    }
+  ]
+}
