@@ -36,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@beyonk/async-script-loader": "^2.3.0",
 		"@beyonk/svelte-googlemaps": "^3.2.0",
 		"@speechly/speech-recognition-polyfill": "^1.2.0"
 	}
