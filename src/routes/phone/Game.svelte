@@ -5,6 +5,7 @@
     import PlayStatus from "./PlayStatus.svelte";
     import { STATUS } from "./store/status_enums";
     import { shuffle } from "$lib/game_content/shuffle.js";
+    import { browser } from "$app/environment";
     export let gameData = [];
     let show = "text";
     let settings = {
@@ -14,7 +15,7 @@
     function restartGame() {
         return {
             leftMatched: settings.gameSize,
-            highestSpeed: localStorage.getItem("highestSpeed") || "",
+            highestSpeed: browser ? localStorage.getItem("highestSpeed") : "",
             status: STATUS.READY,
             cards: shuffle(gameData.slice(0, settings.gameSize)).map(item => {
                 item.flipped = false;
@@ -26,7 +27,7 @@
             displayNameInput: false,
             displaySettings: false,
             ranks: [],
-            userName: localStorage.getItem("userName") || ""
+            userName: browser ? localStorage.getItem("userName") : ""
         };
     }
     function triggerRestart() {
