@@ -88,14 +88,14 @@
     }
 </style>
 
-<div class="container" on:click={flip}>
+<div class="container" on:click={flip} on:keypress={flip}>
     <div class="card {flipped}">
         {#if option.show == 'image'}
-            <img class="front" src={option.img} />
+            <img class="front" src={option.img} alt="image of option {option.name}" />
         {/if}
         {#if option.show == 'text'}
             <p class="front">{option.name}</p>
         {/if}
-        <img class="back" src={back_img} />
+        <img class="back" src={back_img} alt="back-side of a matching card" />
     </div>
 </div>

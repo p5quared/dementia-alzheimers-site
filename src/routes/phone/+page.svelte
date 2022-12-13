@@ -2,7 +2,7 @@
     import * as aList from "./data/alist2.json";
     import Game from "./game.svelte";
     const data = aList.data.map(item => {
-        item.img = `images/${item.img}`
+//        item.img = `../../match-images/${item.img}`
         return item;
     });
 
@@ -27,7 +27,9 @@
 <div class="wrapper">
     <Game gameData={data.slice(0, 8)} />
     <div class="video-container">
-        <video bind:this={videoSource} />
+        <video bind:this={videoSource}>
+            <track kind="captions" src="robots.txt">
+        </video>
 
         <div class="buttons">
             <button on:click={videoCamera}>Start Video</button>

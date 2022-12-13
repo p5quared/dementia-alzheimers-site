@@ -44,7 +44,7 @@
 
 <svelte:options tag={null} accessors={true} />
 
-<div class="modal-background" on:click={handleClose} />
+<div class="modal-background" on:click={handleClose} on:keypress={handleClose} />
 <div class="modal" role="dialog" aria-modal="true">
 
     <slot />
